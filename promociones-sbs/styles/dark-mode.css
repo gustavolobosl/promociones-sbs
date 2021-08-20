@@ -1,0 +1,457 @@
+/* ===== BOTON SWITCH ===== */
+
+.switch {
+  background: var(--primary-30);
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  height: 25px;
+}
+
+.switch::after {
+content: '';
+display: block;
+width: 25px;
+height: 25px;
+position: absolute;
+background: #F1F1F1;
+top: 0;
+left: 0;
+right: unset;
+border-radius: 100px;
+box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+body.dark .switch::after {
+  background: var(--color-dark-10);
+  box-shadow: 0px 0px 0px .5px var(--color-dark-10);
+}
+
+.hr-menu {
+  margin-top: -5px;
+  margin-bottom: 18px;
+  background-color: var(--primary-30);
+  height: 1px !important;
+  border-radius: 100px;
+}
+body.dark .hr-menu {
+  background-color: var(--color-dark-10);
+}
+
+
+.switch.active {
+  background: var(--primary-10);
+  color: #000;
+}
+
+.switch.active .icon-light-mode {
+  color: var(--color-dark-30) !important;
+  padding-left: 3px;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  background: none !important;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-switch {
+  background: none !important;
+}
+
+.boton-switch:hover .links_name {
+  color: white !important;
+}
+
+.boton-switch .links_name {
+  padding-left: 20px;
+}
+
+body.dark .boton-switch .claro {
+  display: none;
+}
+
+body.dark .boton-switch .oscuro {
+  display: block;
+}
+
+body .boton-switch .oscuro {
+  display: none;
+}
+
+/* ===== Estilos Generales ===== */
+body.dark p {
+  color: white !important;
+}
+
+/* ===== Sidebar ===== */
+
+body.dark .sidebar {
+  background: var(--color-dark-20);
+}
+
+body.dark  .sidebar li a{
+  background: var(--color-dark-30);
+}
+
+body.dark  .sidebar li a:hover{
+  background: var(--color-dark-10);
+}
+
+body.dark  .sidebar .nav-link{
+  background: none;
+}
+
+/* ===== Header ===== */
+
+body.dark .layout-main-header {
+  background: var(--color-dark-10);
+  transition: .3s ease all;
+}
+
+body.dark h4, body.dark h6, body.dark h3 {
+  color: white;
+  transition: .3s ease all;
+}
+
+body.dark label {
+  color: white;
+  transition: .3s ease all;
+}
+
+/* ===== Layout ===== */
+body.dark .layout-main  {
+  background: var(--color-dark-30);
+}
+
+body.dark .layout-page {
+  background: var(--color-dark-30);
+  transition: .3s ease all;
+}
+
+/* ===== Card ===== */
+body.dark .card-info {
+  background: var(--color-dark-20);
+  transition: .3s ease all;
+}
+
+body.dark .card-info .card-divided, body.dark .card-info .card-dividedHeader {
+  background: var(--color-dark-25);
+}
+
+body.dark .card-divided, body.dark .card-dividedHeader {
+  background: var(--color-dark-20);
+  transition: .3s ease all;
+}
+
+/* ===== Table ===== */
+
+body.dark .tabla-page .table thead {
+  background: var(--color-dark-30);
+  color: white;
+  border-top: solid 2px var(--color-dark-30);
+  border-bottom: solid 3px var(--color-dark-30);
+}
+
+body.dark .tabla-page .table tbody tr {
+  color: white;
+  border-top: solid 2px var(--color-dark-20);
+}
+
+body.dark .tabla-page .table tbody {
+  background: var(--color-dark-10);
+  color: var(--color-dark-30);
+}
+
+body.dark table .input-select-table {
+  border: solid 2px var(--color-dark-20) !important;
+}
+
+body.dark table .input-text-table {
+  border: solid 2px var(--color-dark-20) !important;
+}
+
+
+/* ===== Boton setting ===== */
+
+body.dark .boton-settings  {
+  background: var(--color-dark-20);
+}
+
+body.dark .boton-settings:hover {
+  background: var(--color-dark-30);
+}
+
+body.dark .caja-search button {
+  background: var(--color-dark-30) !important;
+}
+
+body.dark #dropdownMenuButtonn {
+  background: var(--color-dark-10) !important;
+}
+
+body.dark #dropdownMenuButtonn:hover {
+  background: var(--color-dark-30) !important;
+}
+
+body.dark #dropdownMenuButtonn .icon-more-vert:hover {
+  color: white !important;
+}
+
+/* ===== Botones top ===== */
+
+body.dark .boton-tab {
+  background: var(--color-dark-20);
+  color: white;
+  border: 2px solid var(--primary-30);
+}
+
+
+/* ===== Editar promociones reglas ===== */
+
+body.dark .container-fluid .row .card-info {
+  background: var(--color-dark-30);
+}
+
+body.dark .editar-promociones-reglas .btn-locales {
+  background: var(--color-dark-20);
+  padding: .5rem 1rem;
+  color: white;
+  border-radius: 10px;
+}
+
+
+body.dark .editar-promociones-reglas .btn-ecommerce {
+  background: var(--color-dark-10);
+  padding: .5rem .5rem;
+  color: white;
+  border-radius: 10px;
+}
+
+/* ===== Dropdown ===== */
+
+body.dark #dropdownMenuButton {
+  color: white;
+  padding-top: 3px;
+  height: 28px;
+  width: 28px;
+  border-radius: 100px;
+}
+
+body.dark #dropdownMenuButton:hover {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .3);
+  border-radius: 100px;
+  height: 28px;
+  width: 28px;
+  padding-top: 3px;
+}
+
+
+/* ===== From search ===== */
+
+body.dark .caja-search {
+  box-shadow: inset 0 0 0 2px var(--primary-30);
+  background: var(--color-dark-10);
+}
+
+body.dark .search {
+  background: var(--color-dark-10);
+}
+
+body.dark .caja-search button {
+  background: var(--primary-30) !important;
+  color: white;
+}
+
+body.dark .caja-search {
+  box-shadow: inset 0 0 0 2px var(--primary-30);
+}
+
+body.dark .search::placeholder {
+  color:  white;
+}
+
+body.dark .search:focus::placeholder {
+  color: white;
+}
+
+body.dark .search {
+  color: white;
+}
+
+/* ===== From select ===== */
+
+body.dark .select-sbs {
+  background: var(--color-dark-10);
+  color: white;
+}
+
+body.dark .select {
+  background: var(--color-dark-10);
+}
+
+body.dark .select::after {
+  background: var(--primary-30);
+}
+
+body.dark .select-sbs {
+  border: solid 2px var(--primary-30);
+}
+
+/* ===== From ===== */
+
+body.dark .label-form {
+  color: white;
+}
+
+body.dark .form-active {
+  background: var(--color-dark-10) !important;
+  color: white;
+}
+
+body.dark .select-2::after {
+  color: white;
+}
+
+body.dark .select-2:active {
+  color: white;
+}
+body.dark .select-2:focus {
+  color: white;
+}
+
+body.dark input[type=text] {
+  background-color: var(--color-dark-10) !important;
+}
+
+body.dark input[type=text]::placeholder {
+  color: #7C8BB1;
+}
+
+body.dark input[type=date] {
+  color: #7C8BB1;
+}
+
+body.dark input[type=text].input-disabled {
+  background-color: var(--color-dark-20) !important;
+  border: 2px solid var(--color-dark-10) !important;
+}
+
+body.dark input[type=text].input-disabled::placeholder {
+  color: #626A7B !important;
+}
+
+/* ===== Paginacion ===== */
+
+body.dark .pagination .page-item .page-link {
+  border: 1px solid var(--color-dark-30);
+  color: white;
+  background: var(--color-dark-10);
+  transition: .3s ease all;
+}
+
+body.dark .pagination .page-item .page-link:hover {
+  background: var(--color-dark-20);
+}
+
+body.dark .pagination .disabled .page-link {
+  border: 1px solid var(--color-dark-30);
+  background: var(--color-dark-30);
+  color: white;
+  transition: .3s ease all;
+}
+
+/* ===== EDITAR PROMOCIONES REGLAS DESCUENTO CONDICIONAL ===== */
+
+
+body.dark .editar-promociones-reglas .btn-amarillo {
+  background: #FFAF00;
+  padding: .5rem 1rem;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 1px white;
+}
+
+body.dark .editar-promociones-reglas .btn-verde {
+  background: #06AF4A;
+  padding: .5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 1px white;
+}
+
+body.dark .editar-promociones-reglas .btn-gris {
+  background: #4B4F54;
+  padding: .5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 1px white;
+}
+
+/* ===== Modal ===== */
+
+body.dark .modal .modal-content {
+  /* background: var(--color-dark-30); */
+}
+
+body.dark .modal h4, body.dark .modal p{
+  color: var(--text-color-20) !important;
+}
+
+/* ===== Configuracion ===== */
+
+body.dark .container-fluid .row .card-info {
+  background: var(--color-dark-20);
+}
+
+body.dark header .atras {
+  background: var(--color-dark-20);
+}
+
+body.dark header .barra {
+  background: var(--color-dark-10);
+}
+
+body.dark header .logout {
+  background: var(--color-dark-20);
+}
+
+body.dark .configuracion h2 {
+  color: white;
+}
+
+body.dark .items-active {
+  background: var(--color-dark-10) !important;
+}
+
+body.dark .items:hover {
+  background-color:rgb(255, 255, 255 , .05);
+}
+
+body.dark .items:hover i, body.dark .items:hover span {
+  color: rgb(255, 255, 255 , .5);
+}
+
+body.dark .items i, body.dark .items span  {
+  color: #6D7DAE;
+  color: var(--color-dark-10);
+}
+
+body.dark .items-active i, body.dark .items-active span  {
+  color: white;
+}
+
+body.dark .opciones-menu .title-opciones {
+  background-color: var(--color-dark-20);
+}

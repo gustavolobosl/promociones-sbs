@@ -1,0 +1,34 @@
+.card-info {
+overflow: hidden;
+border: none;
+border-radius: 10px;
+background: white;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+padding: 1rem;
+}
+
+.card-divided {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+}
+
+.card-dividedHeader {
+  border-radius: 10px 10px 0px 0px ;
+  padding: 1rem 1rem;
+  margin-bottom: 0;
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-dividedBody {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
+}

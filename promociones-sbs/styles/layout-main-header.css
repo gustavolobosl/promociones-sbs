@@ -1,0 +1,68 @@
+.layout-main-header {
+  background: var(--primary-30);
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+  position: fixed;
+  width: calc(100% - 78px);
+  z-index: 1;
+  transition-duration: .1s;
+}
+
+.sidebar.open ~ .all-page .layout-main .layout-main-header {
+  padding-inline-end: 12.625rem;
+  transition-duration: 0.3s;
+}
+
+.layout-main-header h2 {
+  padding-block-start: .5rem;
+  font-size: 1.25rem;
+  color: white;
+  margin-right: 2rem;
+}
+
+.layout-main-header .boton-secondary {
+  width: 13rem;
+}
+
+@media (max-width: 500px) {
+
+  .layout-main-header{
+    left: 50px;
+    width: calc(100% - 50px) !important;
+    transition-duration: 0.3s;
+  }
+
+  .layout-main-header .d-flex {
+    width: 100%;
+  }
+
+  .sidebar.open ~ .all-page .layout-main .layout-main-header{
+    left: 280px !important;
+    width: 100%;
+    transition-duration: 0.3s;
+  }
+
+  .layout-main-header {
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0rem;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .layout-main-header h2 {
+    padding-block-start: 0rem;
+    margin-right: 0rem;
+  }
+
+  .layout-main-header .boton-secondary {
+    width: 100%;
+  }
+}

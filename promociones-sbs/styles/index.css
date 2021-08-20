@@ -1,0 +1,67 @@
+@import './login.css';
+@import './boton-primary.css';
+@import './boton-secondary.css';
+@import './boton-red.css';
+@import './botones-table.css';
+@import './modal.css';
+@import './checkbox.css';
+@import './sidebar.css';
+@import './icons.css';
+@import './layout-main-header.css';
+@import './layout-main.css';
+@import './layout-page.css';
+@import './form.css';
+@import './card.css';
+@import './tab-button.css';
+@import './table.css';
+@import './botones.css';
+@import './dark-mode.css';
+@import './paginacion.css';
+@import './configuracion.css';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 16px; */
+}
+
+:root {
+  /* COLORES */
+    --primary-30: #5872FF;
+    --primary-20: #95A6FF;
+    --primary-10: #DBE0FF;
+    --secondary-30: #00AA55;
+    --secondary-20: #20d87c;
+    --secondary-10: #B4FEE7;
+    --background-20: #142167;
+    --background-10: #283687;
+    --background-page: #F8F8F8;
+    --text-color-20: #333333;
+    --text-color-10: #707070;
+
+    /* COLORES DARK MODE */
+    --color-dark-30: #141A2C;
+    --color-dark-25: #242F48;
+    --color-dark-20: #1F2940;
+    --color-dark-10: #3C4864;
+
+    /* TIPOGRAFÍA */
+    --text-title: 500;
+    --text-general: 300;
+    --text-outstanding: 600;
+}
+
+.body {
+  background: var(--background-page);
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--primary-30);
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+

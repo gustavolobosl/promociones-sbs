@@ -1,0 +1,6 @@
+.layout-main {
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+  background: var(--background-page);
+  height: 100vh;
+}

@@ -1,0 +1,68 @@
+.boton-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11.5625rem;
+  height: 2.75rem;
+  font-size: .75rem;
+  font-weight: var(--text-title);
+  color: var(--primary-30);
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  transition: all 0.3s;
+  border: 2px solid var(--primary-30);
+}
+
+.boton-tab:hover {
+  transition: 2ms;
+  color: var(--primary-30);
+  letter-spacing: 3px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.boton-tab-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11.5625rem;
+  height: 2.75rem;
+  font-size: .75rem;
+  font-weight: var(--text-title);
+  color: white;
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  letter-spacing: 3px;
+  background: var(--primary-30);
+}
+
+.boton-tab-active:hover {
+  cursor: default;
+  color: white;
+  direction: none;
+  text-decoration: none;
+}
+
+/* ===================================================== */
+
+@media (max-width: 500px) {
+
+  .boton-tab, .boton-tab-active {
+    width: 45%;
+    font-size: 10px;
+  }
+
+
+}
+
+
+@media (max-width: 300px) {
+
+  .boton-tab, .boton-tab-active {
+    width: 89px;
+    font-size: 10px;
+  }
+
+
+}
+

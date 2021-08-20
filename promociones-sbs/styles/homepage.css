@@ -1,0 +1,9 @@
+.homepage .layout-page .barra-color {
+  width: 6px;
+  background: var(--primary-30);
+  vertical-align: middle;
+}
+
+.homepage .layout-page .contenido {
+  padding: 1rem;
+}

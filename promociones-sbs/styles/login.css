@@ -1,0 +1,338 @@
+body {
+    background-image: url("../img/bg-login2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.login {
+    z-index: 1;
+}
+
+.login .row {
+    height: 100vh;
+}
+.content-login {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+}
+.content-login img {
+    margin-top: 10vh;
+}
+.content-login h2 {
+    margin-top: 20vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #373D9D;
+    line-height: 50px;
+    font-size: 40px;
+}
+.content-login a {
+    margin-top: 80rem !important;
+    padding: 10px 40px;
+    border: none;
+    background-color: #373D9D;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+.app-img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    padding: 0;
+}
+.app-img img {
+
+    width: 90%;
+}
+.logo-img2{
+    display: none !important;
+}
+@media (max-width: 1200px) {
+    .app-img {
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .body-login {
+        background-image: url("../img/bg-responsive2.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0 !important;
+        margin: 0 !important;
+        transition: all 1s;
+    }
+.body-login h2{
+        color: white !important;
+        margin-top: 8vh !important;
+    }
+}
+@media (max-width: 768px) {
+    .app-img {
+        display: none;
+    }
+    .body-login h2{
+        font-size: 30px !important;
+        margin-top: 8vh !important;
+
+
+    }
+    .content-login a {
+        margin-top: 80px;
+        padding: 10px 40px;
+        border: none;
+        background-color: #373D9D;
+        color: white;
+        border-radius: 10px;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 5px;
+
+    }
+
+ }
+ @media (max-width: 500px) {
+    .logo-img2{
+        display: flex !important;
+        justify-content: center;
+
+    }
+    .content-login img {
+        margin-top: 5vh;
+    }
+    .body-login h2{
+        font-size: 22px !important;
+        margin-top: 5vh !important;
+        text-align: center;
+    }
+    .logo-img1, .app-img img {
+        display: none !important;
+    }
+    .content-login a {
+        margin-top: 35vh;
+        padding: 10px 40px;
+        border: none;
+        background-color: #373D9D;
+        color: white;
+        border-radius: 10px;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 5px;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+ }
+
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: #afa3ff;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: rise 10s infinite ease-in;
+}
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+}
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+.bubble:nth-child(5) {
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(6) {
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+.bubble:nth-child(7) {
+    width: 90px;
+    height: 90px;
+    left: 70%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(8) {
+    width: 25px;
+    height: 25px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(9) {
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(10) {
+    width: 90px;
+    height: 90px;
+    left: 25%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+@keyframes rise {
+    0% {
+
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 1080px;
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+
+/*      EMPRESAS       */
+
+.body-empresas {
+    background-image: url("../img/bg-login2.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+    font-family: 'Poppins', sans-serif;
+}
+.empresas {
+    background-color: rgba(255, 255, 255, .5);
+    /* filter: blur(6px); */
+    position: relative;
+    height: 90vh;
+    margin-top: 5vh;
+    border-radius: 20px;
+    width: 30%;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.empresas::before {
+    content: '';
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    position: absolute;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, .5);
+    filter: blur(3px);
+}
+
+.empresas img {
+    filter: blur(0px) !important;
+}
+
+.empresas h1{
+    font-weight: 400;
+    color: #373D9D;
+    font-size: 30px;
+
+}
+.empresas img{
+    width: 400px;
+}
+
+.empresas a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #373D9D;
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .empresas {
+        background-color: rgba(255, 255, 255, 0.535);
+        height: 100vh;
+        margin: 0 !important;
+        width: 100%;
+        border-radius: 0 !important;
+        padding: 0!important;
+    }
+    .f-empresas{
+        padding: 0!important;
+    }
+    .empresas h1{
+        margin-left: 8%;
+        margin-right: 8%;
+
+    }
+}
+@media (max-width: 500px) {
+    .empresas h1{
+        font-weight: 300;
+        color: #373D9D;
+        line-height: 50px;
+        font-size: 25px;
+        padding-top: 5rem;
+    }
+    .empresas img{
+        width: 250px;
+    }
+
+}

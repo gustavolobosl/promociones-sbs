@@ -1,0 +1,225 @@
+/* --------------BOTON PRIMARY-------------- */
+.boton-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-30);
+  width: 12.5625rem;
+  height: 2.75rem;
+  font-size: .75rem;
+  font-weight: var(--text-title);
+  color: white;
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  transition: all 0.3s;
+}
+
+.boton-primary:hover {
+  transition: 2ms;
+  color: white;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.modal-content .boton-primary div {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/* --------------BOTON SECONDARY-------------- */
+.boton-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-20);
+  width: 12.5625rem;
+  height: 2.75rem;
+  font-size: .75rem;
+  font-weight: var(--text-title);
+  color: white;
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  transition: all 0.3s;
+}
+
+.boton-secondary:hover {
+  transition: 2ms;
+  color: white;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+
+/* --------------BOTON BLANCO-------------- */
+.boton-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 12.5625rem;
+  height: 2.75rem;
+  font-size: .75rem;
+  font-weight: var(--text-title);
+  color: var(--primary-30);
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  transition: all 0.3s;
+}
+
+.boton-white:hover {
+  transition: 2ms;
+  color: var(--primary-30);
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+
+
+/* --------------BOTON COLLAPSE-------------- */
+.homepage .layout-sidebar .boton-collapse {
+  display: flex;
+  padding-inline-end: 1rem;
+  padding-inline-start: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-10);
+  max-width: 20.875rem;
+  height: 2.75rem;
+  font-size: .75rem;
+  font-weight: var(--text-title);
+  color: white;
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s;
+}
+
+.homepage .layout-sidebar .boton-collapse:hover {
+  text-decoration: none;
+}
+
+.homepage .layout-sidebar .boton-collapse:focus {
+  background: var(--primary-30);
+}
+
+.homepage .nav-link {
+  color: white !important;
+  font-size: 10px;
+}
+
+.homepage .nav-link:hover{
+  transition: all 0.3s;
+  letter-spacing: .4px;
+}
+
+
+/* --------------BOTON RED-------------- */
+.boton-red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  width: 12.5625rem;
+  height: 2.75rem;
+  font-size: .75rem;
+  font-weight: var(--text-title);
+  color: white;
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  transition: all 0.3s;
+}
+
+.boton-red:hover {
+  transition: 2ms;
+  color: white;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+
+
+/* --------------BOTON SETTING-------------- */
+.boton-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-20);
+  min-width: 3rem;
+  height: 2.75rem;
+  font-size: 1.5rem;
+  font-weight: var(--text-title);
+  color: var(--primary-10);
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  transition: all 0.3s;
+  text-decoration: none !important;
+}
+
+.icon-settings {
+  text-decoration: none !important;
+}
+
+.boton-settings .icon-settings {
+  color: white;
+  text-decoration: none !important;
+  transition: 3s;
+  transform: rotate(-180deg);
+}
+
+.boton-settings:hover .icon-settings {
+  color: white;
+  text-decoration: none !important;
+  transition: 1s;
+  transform: rotate(180deg);
+}
+
+
+
+/* --------------BOTON MENU-BOX-------------- */
+.boton-menu-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-20);
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: var(--text-title);
+  color: var(--primary-10);
+  letter-spacing: .5px;
+  border-radius: .625rem;
+  transition: all 0.3s;
+  text-decoration: none !important;
+}
+
+.icon-more-vert {
+  text-decoration: none !important;
+}
+
+.boton-settings .icon-more-vert {
+  color: white;
+  text-decoration: none !important;
+}
+
+.boton-settings .icon-more-vert:hover {
+  color: var(--primary-30);
+  text-decoration: none !important;
+}
+
+
+
+/* ===================================================== */
+
+@media (max-width: 500px) {
+
+  .boton-primary, .boton-secondary, .boton-red {
+    width: 100% !important;
+  }
+}

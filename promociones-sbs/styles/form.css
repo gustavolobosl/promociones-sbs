@@ -1,0 +1,45 @@
+@import './form-select.css';
+@import './form-search.css';
+
+.label-form {
+  color: var(--primary-30);
+  font-weight: var(--text-title);
+}
+
+input {
+  border-radius: 10px !important;
+}
+
+.input-disabled {
+  background: var(--primary-20) !important;
+  border: none !important;
+}
+
+.input-disabled::placeholder {
+  color: white !important;
+}
+
+.form-active {
+  background: var(--primary-10) !important;
+  border: none !important;
+  color: var(--primary-30);
+  border-radius: 10px;
+}
+
+.form-active::placeholder {
+  color: var(--primary-30);
+}
+
+
+
+/* --------------INPUT-TEXT-TABLE-------------- */
+
+.input-text-table {
+  background: var(--primary-10) !important;
+  border: solid 2px var(--primary-20) !important;
+}
+
+.input-select-table {
+  background: var(--primary-10) !important;
+  border: solid 2px var(--primary-20) !important;
+}

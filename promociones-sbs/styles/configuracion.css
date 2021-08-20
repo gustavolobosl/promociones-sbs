@@ -1,0 +1,292 @@
+/* Header */
+
+header {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 6.25rem;
+}
+
+
+/* Boton Atras */
+
+.atras {
+  width: 4%;
+  height: 6.25rem;
+  background: var(--background-20);
+}
+
+.atras a, .logout a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atras a div {
+  transform: rotate(90deg);
+}
+
+.atras a div i {
+  color: white;
+  font-size: 40px;
+}
+
+/* Barra */
+
+.barra {
+  width: 81%;
+  height: 6.25rem;
+  background: var(--primary-30);
+  display: flex;
+  align-items: center;
+}
+
+.barra  img {
+  margin-left: 1rem;
+  width: 150px;
+}
+
+/* Boton Logout */
+
+.logout {
+  width: 15%;
+  height: 6.25rem;
+  background: var(--background-20);
+}
+
+.logout a {
+  color: white;
+}
+
+.logout a .d-flex {
+  gap: 10px;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.logout a .d-flex i {
+  font-size: 2rem;
+}
+
+
+/* Page */
+.menu-lateral {
+  max-width:40% ;
+}
+
+.menu-lateral h2 {
+  font-size: 1.3rem;
+}
+
+.all-page-config {
+  background: #E4E9F7;
+}
+
+.configuracion {
+  position: relative;
+  /* min-height: 100vh; */
+  top: 0;
+  padding-left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+/* Menu Lateral */
+
+.configuracion .boton-settings {
+  background-color: var(--primary-30);
+}
+
+.configuracion .lista .items {
+  list-style: none;
+  margin-bottom: .5rem;
+  padding-block-end: .3rem;
+  padding-block-start: .3rem;
+  padding-inline-start: 1rem;
+}
+
+.configuracion .lista .items-active {
+  list-style: none;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+.configuracion .lista .items-active a {
+  cursor: default !important;
+  color: var(--primary-30) !important;
+}
+
+li {
+  list-style: none;
+}
+
+.configuracion .lista .items a {
+  font-size: 1.3rem;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--background-10);
+}
+
+.configuracion .lista .items a i {
+  font-size: 1.7rem;
+}
+
+.configuracion .lista .items:hover {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .15);
+}
+
+/* Opciones del Menu */
+
+.opciones-menu {
+  max-width: 70%;
+  padding-left: 5rem;
+}
+
+.opciones-menu .title-opciones {
+  height: 2.75rem;
+  background-color: var(--primary-30);
+  width: 180px;
+  padding-left: .5rem;
+  border-radius: 10px;
+}
+
+.opciones-menu .title-opciones div {
+  font-size: 1.5rem;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.opciones-menu .title-opciones div i {
+  font-size: 2rem;
+}
+
+.opciones-menu .card-info {
+  width: 100%;
+}
+
+/* Tabla configuracion */
+
+.opciones-menu table i {
+  font-size: 1.3rem;
+}
+
+
+.opciones-menu .table td, .table th {
+  border-top: 0px;
+}
+
+@media (max-width: 1200px) {
+
+  .configuracion {
+    padding-left: 0px;
+  }
+
+  .configuracion .menu-lateral {
+    max-width: 5%;
+    transition: .5s;
+  }
+
+  .configuracion .menu-lateral .lista .d-flex {
+    padding-left: 0px !important;
+  }
+
+  .atras {
+    width: 10%;
+  }
+  .barra {
+    width: 80%;
+  }
+  .logout {
+    width: 10%;
+  }
+
+  .logout span {
+    display: none;
+  }
+
+  .menu-lateral h2, .menu-lateral .items span {
+    display: none;
+  }
+
+   .menu-lateral .links-name {
+     display: none;
+   }
+
+  .configuracion {
+    left: 30px;
+    width: 100%;
+  }
+
+  .menu-lateral {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    max-width: 15%;
+  }
+
+  .menu-lateral .items {
+    width: 3rem;
+    padding-inline-start: 0rem !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-lateral .boton-settings {
+    margin-right: 0px !important;
+  }
+
+  .opciones-menu {
+    max-width: 85%;
+    padding-left: 45px;
+    padding-right: 0px;
+  }
+
+  .opciones-menu .card-info {
+    width: 100%;
+  }
+
+  .card-info .top {
+    display: block !important;
+  }
+
+  .card-info .caja-search {
+    margin-right: 0px !important;
+    margin-bottom: 1rem;
+    max-width: 100% !important;
+  }
+
+  .card-info .boton-primary {
+  width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .search {
+    width: 100%;
+  }
+
+  .atras {
+    width: 20%;
+  }
+  .barra {
+    width: 60%;
+  }
+  .logout {
+    width: 20%;
+  }
+
+  .logout span {
+    display: none;
+  }
+}

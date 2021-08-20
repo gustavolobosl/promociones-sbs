@@ -1,0 +1,63 @@
+.tabla-page {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabla-page .table thead {
+  background: var(--primary-30);
+  color: white;
+}
+
+.tabla-page .table thead th {
+  font-weight: 500;
+}
+
+.tabla-page .table tbody {
+  background: var(--primary-10);
+  color: var(--primary-30);
+}
+
+.tabla-page .table tbody td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tabla-page::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+    border-radius: 20px;
+    background-color:var(--primary-10);
+}
+
+.tabla-page::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--primary-30);
+}
+
+.tabla-page {
+  margin-bottom: 1rem;
+}
+
+.tabla-page .table {
+  margin-bottom: .2rem;
+}
+
+
+/* ===================================================== */
+
+@media (max-width: 500px) {
+
+  .tabla-page {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+
+  .tabla-page .table {
+    margin-bottom: .2rem;
+    font-size: 14px;
+  }
+
+}

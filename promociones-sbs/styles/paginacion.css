@@ -1,0 +1,20 @@
+.pagination {
+  margin-top: 20px !important;
+  margin-bottom: 0px !important;
+}
+
+
+.pagination .page-item .page-link {
+  border: 1px solid var(--primary-30);
+  color: var(--primary-30);
+}
+
+.pagination .page-item .page-link:hover {
+  background: var(--primary-10);
+}
+
+.pagination .disabled .page-link {
+  border: 1px solid var(--primary-30);
+  background: var(--primary-20);
+  color: white;
+}

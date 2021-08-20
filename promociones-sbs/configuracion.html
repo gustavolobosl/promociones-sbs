@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Promociones SBS</title>
+</head>
+
+<body class="body">
+  <header>
+    <div class="atras">
+      <a href="./homepage.html">
+        <div>
+          <i class="icon-expand-more"></i>
+        </div>
+      </a>
+    </div>
+    <div class="barra">
+      <img src="./img/logo-white.svg" class="logo" alt="">
+    </div>
+    <div class="logout">
+      <a href="#">
+        <div class="d-flex">
+          <i class="icon-logout"></i>
+          <span>Cerra sesion</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <div class="home-section all-page-config">
+    <div class="layout-main">
+      <div class="configuracion">
+        <div class="container-fluid pl-0 pr-0 pt-4">
+          <div class="row">
+            <div class="col-lg-2 col-md-1 col-1 menu-lateral">
+              <div class="d-flex align-items-center mb-4">
+                <a href="./configuracion.html" class="boton-settings">
+                  <i class="icon-settings"></i>
+                </a>
+                <h2 class="mb-0 ml-2">Configuraciones</h2>
+              </div>
+              <ul class="lista">
+                <li class="items">
+                  <a href="" class="d-flex align-items-center">
+                    <i class="icon-account-circle"></i>
+                    <span>Perfil</span>
+                  </a>
+                </li>
+                <li class="items">
+                  <a href="" class="d-flex align-items-center">
+                    <i class="icon-dns"></i>
+                    <span>Sistema</span>
+                  </a>
+                </li>
+                <li class="items">
+                  <a href="" class="d-flex align-items-center">
+                    <i class="icon-sync"></i>
+                    <span>Sincronización</span>
+                  </a>
+                </li>
+                <li class="items items-active">
+                  <a href="" class="d-flex align-items-center">
+                    <i class="icon-assignment-ind"></i>
+                    <span>Roles</span>
+                  </a>
+                </li>
+                <li class="items">
+                  <a href="" class="d-flex align-items-center">
+                    <i class="icon-verified-user"></i>
+                    <span>Seguridad</span>
+                  </a>
+                </li>
+                <hr class="hr-menu mt-4">
+                <li class="pl-lg-2 d-flex">
+                  <button class="switch mr-3" id="switch">
+                    <span>
+                      <i class="icon-light-mode"></i>
+                    </span>
+                    <span>
+                      <i class="icon-dark-mode"></i>
+                    </span>
+                  </button>
+                  <!-- <span class="links_name oscuro">Dark Mode</span> -->
+                  <span class="links-name claro">Light Mode</span>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-lg-10 col-md-11 col-11 opciones-menu">
+              <div class="title-opciones d-flex align-items-center mb-4">
+                <div class="d-flex align-items-center">
+                  <i class="icon-assignment-ind"></i>
+                  <span>Roles</span>
+                </div>
+              </div>
+              <div class="card-info">
+                <div class="d-flex top mb-3">
+                  <div class="form-inline caja-search mr-lg-3">
+                    <input class="search" type="search" placeholder="Buscar producto por nombre o SKU"
+                      aria-label="Search">
+                    <button class="btn" type="submit"><i class="icon-search"></i></button>
+                  </div>
+                  <div>
+                    <a href="#" class="boton-primary">
+                      <div>
+                        <span>CREAR ROL</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <p>Usa los roles para organizar a los miembros y personalizar sus permiso.</p>
+                <div class="tabla-page mt-4">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Roles</th>
+                        <th scope="col" class="text-center">Opciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="d-flex align-items-center">
+                          <i class="icon-account-circle mr-2"></i>
+                          <span>Administrador supremo</span>
+                        </td>
+                        <td>
+                          <div class="text-center">
+                            <a id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false" href=""><i class="icon-more-vert"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="./entidades-emitidas-editar-bines.html">Editar bines</a>
+                              <a class="dropdown-item" href="#">Ver bines</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="d-flex align-items-center">
+                          <i class="icon-account-circle mr-2"></i>
+                          <span>Validador</span>
+                        </td>
+                        <td>
+                          <div class="text-center">
+                            <a id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false" href=""><i class="icon-more-vert"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="./entidades-emitidas-editar-bines.html">Editar bines</a>
+                              <a class="dropdown-item" href="#">Ver bines</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="d-flex align-items-center">
+                          <i class="icon-account-circle mr-2"></i>
+                          <span>Operador</span>
+                        </td>
+                        <td>
+                          <div class="text-center">
+                            <a id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false" href=""><i class="icon-more-vert"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="./entidades-emitidas-editar-bines.html">Editar bines</a>
+                              <a class="dropdown-item" href="#">Ver bines</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="d-flex align-items-center">
+                          <i class="icon-account-circle mr-2"></i>
+                          <span>Admin</span>
+                        </td>
+                        <td>
+                          <div class="text-center">
+                            <a id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false" href=""><i class="icon-more-vert"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="./entidades-emitidas-editar-bines.html">Editar bines</a>
+                              <a class="dropdown-item" href="#">Ver bines</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel">Crear nueva promocion</h4>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p>
+              En este momento usted va a generar una nueva promoción en el registro, con un nuevo numero de ficha.
+              Para continuar o cancelar, pulse el botón correspondiente
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center ">
+          <a href="/editar-promocion.html" class="boton-primary">
+            <div>
+              <span>ACEPTAR</span>
+            </div>
+          </a>
+          <a href="#" data-dismiss="modal" class="boton-primary boton-white">
+            <div>
+              <span>CANCELAR</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

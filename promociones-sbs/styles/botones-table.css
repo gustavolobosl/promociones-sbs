@@ -1,0 +1,167 @@
+.btn-table {
+  padding: .3rem 1rem;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  min-width: 170px;
+  text-decoration: none !important;
+  height: 30px;
+}
+
+.btn-table:hover {
+  color: white;
+}
+
+.btn-table:hover .icon-hourglass{
+  transform: rotate(360deg);
+  transition: 1s;
+}
+
+.btn-table span {
+line-height: 0px;
+padding-top: 2px;
+text-decoration: none;
+}
+
+.boton-table-1 {
+  background: var(--primary-20);
+}
+
+.boton-table-2 {
+  background: var(--secondary-20);
+}
+.boton-table-3 {
+  background: #0088FF;
+}
+
+.boton-table-2:hover {
+  background: var(--secondary-30);
+  transition: .6s;
+}
+
+.btn-table .icon {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Boton delate */
+
+.tabla-page .boton-delete {
+  text-decoration: none;
+}
+
+.tabla-page .boton-delete .icon-delete {
+  padding: .2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid red;
+  color: red;
+}
+
+.tabla-page .boton-delete .icon-delete:hover {
+  padding: .2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: .5s;
+}
+
+/* Boton more */
+
+.tabla-page .boton-more {
+  text-decoration: none;
+}
+
+.tabla-page .boton-more .icon-add {
+  padding: .2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid #0088FF;
+  color: #0088FF;
+}
+
+.tabla-page .boton-more .icon-add:hover {
+  padding: .2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid #0088FF;
+  color: white;
+  background: #0088FF;
+  transition: .5s;
+}
+
+/* Boton more */
+
+.tabla-page .boton-check {
+  text-decoration: none;
+}
+
+.tabla-page .boton-check .icon-done {
+  padding: .2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid var(--secondary-20);
+  color: var(--secondary-20);
+}
+
+.tabla-page .boton-check .icon-done:hover {
+  padding: .2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid var(--secondary-20);
+  color: white;
+  background: var(--secondary-20);
+  transition: .5s;
+}
+
+/* Boton lupa */
+
+.tabla-page .boton-lupa {
+  text-decoration: none;
+}
+
+.tabla-page .boton-lupa .icon-search {
+  padding: .2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid var(--primary-30);
+  color: var(--primary-30);
+}
+
+.tabla-page .boton-lupa .icon-search:hover {
+  padding: .2rem;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid var(--primary-30);
+  color: white;
+  background: var(--primary-30);
+  transition: .5s;
+}
+
+
+/* ===================================================== */
+
+@media (max-width: 844px) {
+
+  /* .btn-table span {
+    font-size: 12px;
+    line-height: 0px;
+    padding-top: 2px;
+    text-decoration: none;
+  } */
+
+  .btn-table {
+    min-width: auto;
+    padding: 1rem 1rem;
+  }
+
+  .btn-table span {
+    display: none;
+  }
+
+}

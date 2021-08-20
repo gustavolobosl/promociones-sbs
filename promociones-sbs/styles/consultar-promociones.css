@@ -1,0 +1,33 @@
+#dropdownMenuButton {
+  text-decoration: none;
+  color: var(--primary-30);
+}
+
+.caja-verde {
+  background: var(--secondary-20);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.caja-verde label {
+  line-height: 0px;
+}
+
+@media (max-width: 600px) {
+
+  .caja-verde {
+    background: var(--secondary-20);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .caja-verde label {
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+
+
+}

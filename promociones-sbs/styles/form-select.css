@@ -1,0 +1,105 @@
+.select-sbs {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  background: white;
+  flex: 1;
+  padding: 0 .5em;
+  color:var(--primary-20);
+  cursor:pointer;
+  font-size: 1em;
+  border: none;
+  border: solid 2px var(--primary-30);
+  border-radius: 10px;
+}
+
+.select-sbs::-ms-expand {
+   display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 36.7rem;
+  height: 2.75rem;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: .25em;
+  border-radius: 10px;
+}
+
+.select::after {
+  font-family: 'icomoon';
+  border-radius: 10px 0px 0px 10px;
+  content: "\e90b";
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  height: 2.75rem;
+  padding: 0 1em;
+  background: var(--primary-30);
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+}
+
+/* ----------------------------------------------- */
+
+.form-select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  border: solid 2px var(--primary-20);
+  border-radius: 10px;
+  background: white;
+  flex: 1;
+  padding: 0 1rem;
+  color:var(--primary-20);
+  cursor:pointer;
+  font-size: 1em;
+  padding-right: 32px;
+}
+
+.form-select::-ms-expand {
+   display: none;
+}
+
+
+.select-2 {
+  position: relative;
+  display: flex;
+  line-height: 1.5;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+.select-2::after {
+  font-family: 'icomoon';
+  border-radius: 10px;
+  content: "\e90b";
+  position: absolute;
+  color: var(--primary-30);
+  top: 0;
+  right: 0;
+  padding: 0 .5rem;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+  font-size: 25px;
+}
+
+
+
+@media (max-width: 500px) {
+
+  .select {
+  width: 100%;
+  }
+}
